@@ -129,13 +129,13 @@ Quit out of the Python interpreter:
 
 In your directory you should now see a new file called `my-new-file.txt`:
 
-    $ ls
+    $ ls #In Windows: dir 
     dummy.txt
     my-new-file.txt
     origin.txt
     README.md
 
-    $ cat my-new-file.txt
+    $ cat my-new-file.txt #In Windows: type  my-new-file.txt
     Hello, this is my new file!
 
 ## A simple example script
