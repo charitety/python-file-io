@@ -183,7 +183,7 @@ Notice two things about this script:
 In this repo is a text version of *On the Origin of Species* by
 Charles Darwin. Check it out:
 
-    $ less origin.txt
+    $ less origin.txt #In Windows, using Powershell: type file.txt | Out-Host -Paging OR type file.txt | oh -p 
 
 Your goal is to write a script that will read `origin.txt` and find all
 occurrences of certain words and write occurrences to a new file.
