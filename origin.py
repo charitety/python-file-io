@@ -2,7 +2,9 @@
 import re
 
 
-def wordChecker(txtFile, strWord):
+def wordChecker():
+    txtFile = input('Enter your file path: ')
+    strWord = input('Specify the string to search: ')
     """Takes in a text file and a string root of a word.
     It searches for words related to that string using regular
     expressions and returns the words and the lines where they are."""
@@ -26,11 +28,11 @@ def wordChecker(txtFile, strWord):
                 # Write word match to output file when a word is found
                 if match:
                     outStream.write("{}\t{}\n".format(lineNum, match.group(0)))
-                    
+
     print("Done!")
     print(f"{txtFile} is closed?", inStream.closed)
     print(f"{strWord}.txt is closed?", outStream.closed)
 
 
 if __name__ == "__main__":
-    wordChecker("origin.txt", "herit")
+    wordChecker()
